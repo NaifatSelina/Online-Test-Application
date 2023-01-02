@@ -550,3 +550,47 @@ body {
     outline:none;
     font-size: 20px;
 }
+
+/* result box styling */
+.resultBox *:nth-child(odd){
+    text-align:right;
+}
+.resultBox span{
+    font-weight: 600;
+}
+.buttonBox{
+    
+    
+    text-align:center;
+}
+.buttonBox a{
+    background-color:#1da3dd;
+    border-radius: 50px;
+    border:0;
+    text-decoration: none;
+    color:#fff;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 30px;
+    display: inline-block;
+}
+/* option box styling */
+.optionBox span.right{
+    background-color: rgb(74, 206, 57);
+    border-color: chartreuse;
+    color:cornsilk;
+}
+.optionBox span.wrong{
+    background-color: crimson;
+    border-color:crimson;
+    color:cyan;
+}
+.container1{
+    background-color: antiquewhite;
+    padding:50px;
+    border-radius: 10px;
+
+}
+span:hover{
+    background-color: rgb(241, 241, 79);
+}
