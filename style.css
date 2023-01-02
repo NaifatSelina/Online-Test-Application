@@ -419,3 +419,28 @@ footer button.show {
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"); 
 
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'sans-serif', sans-serif;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.container{
+    width: 850px;
+    height: 600px;
+    background-color: rgb(221, 92, 156);
+    box-shadow:0 0 50px 0 rgba(255, 25, 182, 0.2);
+    min-height: 350px;
+    padding:50px 50px ;
+    border-radius: 10px;
+    display:flex;
+}
