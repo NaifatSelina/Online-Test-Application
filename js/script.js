@@ -12,6 +12,27 @@ const timeCount = document.querySelector(".timer .timer_sec");
 const answers_btn = info_box.querySelector(".buttons .answers");
 
 // if startQuiz button clicked
-start_btn.onclick = ()=>{
+start_btn.onclick = () => {
     info_box.classList.add("activeInfo"); //show info box
 }
+
+// if continueQuiz button clicked
+continue_btn.onclick = () => {
+    info_box.classList.remove("activeInfo"); //hide info box
+    quiz_box.classList.add("activeQuiz"); //show quiz box
+    showQuetions(0); //calling showQestions function
+    queCounter(1); //passing 1 parameter to queCounter
+    startTimer(15); //calling startTimer function
+    startTimerLine(0); //calling startTimerLine function
+}
+
+let timeValue = 15;
+let que_count = 0;
+let que_numb = 1;
+let userScore = 0;
+let counter;
+let counterLine;
+let widthValue = 0;
+
+const restart_quiz = result_box.querySelector(".buttons .restart");
+const quit_quiz = result_box.querySelector(".buttons .quit");
