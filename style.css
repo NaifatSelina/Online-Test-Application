@@ -95,7 +95,7 @@ body {
 
 .info_box .info-list .info span {
     font-weight: 600;
-    color: rgb(238, 130, 187);
+    color: rgb(0, 0, 0);
 }
 
 /* info box buttons styling */
@@ -384,4 +384,35 @@ footer button.show {
     border-radius: 5px;
     border: 1px solid #c34f8d;
     transition: all 0.3s ease;
+}
+
+/* buttons styling */
+.buttons button.restart{
+    color: #fff;
+    background: #c34f8d;
+}
+
+.buttons button.restart:hover{
+    background: #ac8a9c;
+}
+
+.buttons button.quit{
+    color: #c34f8d;
+    background: #fff;
+}
+
+.buttons button.quit:hover{
+    color: #fff;
+    background: #c34f8d;
+}
+
+
+.buttons button.answers{
+    color: #c34f8d;
+    background: #fff;
+}
+
+.buttons button.answers:hover{
+    color: #fff;
+    background: #c34f8d;
 }
