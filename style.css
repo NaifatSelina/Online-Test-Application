@@ -17,6 +17,7 @@ body{
     background: #080206;
 }
 
+/* start button */
 .start_btn{
     position: absolute;
     top: 60%;
@@ -26,6 +27,7 @@ body{
                 0 6px 20px 0 rgba(10, 64, 11, 0.19);
 }
 
+/* info, quiz and result box */
 .info_box,
 .quiz_box,
 .result_box{
@@ -46,6 +48,7 @@ body{
     transform: translate(-50%, -50%) scale(1);
 }
 
+/* start button */
 .start_btn button{
     font-size: 25px;
     font-weight: 500;
@@ -58,6 +61,7 @@ body{
     cursor: pointer;
 }
 
+/* info box styling */
 .info_box{
     width: 1000px;
     background: rgb(238, 130, 187);
@@ -93,6 +97,8 @@ body{
     font-weight: 600;
     color: rgb(238, 130, 187);
 }
+
+/* info box buttons styling */
 .info_box .buttons{
     height: 60px;
     display: flex;
