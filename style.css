@@ -1,47 +1,47 @@
 /* importing google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background: #ff00dd;
 }
 
-::selection{
+::selection {
     color: #fff;
     background: #080206;
 }
 
 /* start button */
-.start_btn{
+.start_btn {
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 4px 8px 0 rgba(255, 64, 223, 0.2), 
-                0 6px 20px 0 rgba(10, 64, 11, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(255, 64, 223, 0.2),
+        0 6px 20px 0 rgba(10, 64, 11, 0.19);
 }
 
 /* info, quiz and result box */
 .info_box,
 .quiz_box,
-.result_box{
+.result_box {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 4px 8px 0 rgb(253, 253, 253), 
-                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgb(253, 253, 253),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .info_box.activeInfo,
 .quiz_box.activeQuiz,
-.result_box.activeResult{
+.result_box.activeResult {
     opacity: 1;
     z-index: 5;
     pointer-events: auto;
@@ -49,7 +49,7 @@ body{
 }
 
 /* start button */
-.start_btn button{
+.start_btn button {
     font-size: 25px;
     font-weight: 500;
     color: #dd92bc;
@@ -62,7 +62,7 @@ body{
 }
 
 /* info box styling */
-.info_box{
+.info_box {
     width: 1000px;
     background: rgb(238, 130, 187);
     border-radius: 10px;
@@ -72,7 +72,7 @@ body{
     transition: all 0.3s ease;
 }
 
-.info_box .info-title{
+.info_box .info-title {
     height: 160px;
     width: 100%;
     border-bottom: 1px solid rgb(26, 46, 33);
@@ -84,22 +84,22 @@ body{
     font-weight: 600;
 }
 
-.info_box .info-list{
+.info_box .info-list {
     padding: 15px 30px;
 }
 
-.info_box .info-list .info{
+.info_box .info-list .info {
     margin: 5px 0;
     font-size: 17px;
 }
 
-.info_box .info-list .info span{
+.info_box .info-list .info span {
     font-weight: 600;
     color: rgb(238, 130, 187);
 }
 
 /* info box buttons styling */
-.info_box .buttons{
+.info_box .buttons {
     height: 60px;
     display: flex;
     align-items: center;
@@ -108,7 +108,7 @@ body{
     border-top: 1px solid rgb(133, 133, 133);
 }
 
-.info_box .buttons button{
+.info_box .buttons button {
     margin: 0 5px;
     height: 40px;
     width: 100px;
@@ -123,7 +123,7 @@ body{
 }
 
 /* quiz box styling */
-.quiz_box{
+.quiz_box {
     width: 1000px;
     background: #fff;
     border-radius: 10px;
@@ -133,7 +133,7 @@ body{
     transition: all 0.3s ease;
 }
 
-.quiz_box header{
+.quiz_box header {
     position: relative;
     z-index: 2;
     height: 70px;
@@ -146,12 +146,12 @@ body{
     box-shadow: 0px 3px 5px 1px rgb(238, 130, 187);
 }
 
-.quiz_box header .title{
+.quiz_box header .title {
     font-size: 20px;
     font-weight: 600;
 }
 
-.quiz_box header .timer{
+.quiz_box header .timer {
     color: #0c3913;
     background: #cce5ff;
     border: 1px solid #b8daff;
@@ -165,13 +165,13 @@ body{
 }
 
 /* quiz timer styling */
-.quiz_box header .timer .time_left_txt{
+.quiz_box header .timer .time_left_txt {
     font-weight: 400;
     font-size: 17px;
     user-select: none;
 }
 
-.quiz_box header .timer .timer_sec{
+.quiz_box header .timer .timer_sec {
     font-size: 18px;
     font-weight: 500;
     height: 30px;
@@ -185,7 +185,7 @@ body{
     user-select: none;
 }
 
-.quiz_box header .time_line{
+.quiz_box header .time_line {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -194,22 +194,22 @@ body{
 }
 
 /* quiz options styling */
-section{
+section {
     padding: 25px 30px 20px 30px;
     background: #fff;
 }
 
-section .que_text{
+section .que_text {
     font-size: 25px;
     font-weight: 600;
 }
 
-section .option_list{
+section .option_list {
     padding: 20px 0px;
-    display: block;   
+    display: block;
 }
 
-section .option_list .option{
+section .option_list .option {
     background: aliceblue;
     border: 1px solid #081609;
     border-radius: 5px;
@@ -223,34 +223,34 @@ section .option_list .option{
     justify-content: space-between;
 }
 
-section .option_list .option:last-child{
+section .option_list .option:last-child {
     margin-bottom: 0px;
 }
 
-section .option_list .option:hover{
+section .option_list .option:hover {
     color: #0a2411;
     background: #787f86;
     border: 1px solid #4c5155;
 }
 
 /* correct and incorrect answer styling */
-section .option_list .option.correct{
+section .option_list .option.correct {
     color: #155724;
     background: #d4edda;
     border: 1px solid #c3e6cb;
 }
 
-section .option_list .option.incorrect{
+section .option_list .option.incorrect {
     color: #a20010;
     background: #ff838d;
     border: 1px solid #9d5159;
 }
 
-section .option_list .option.disabled{
+section .option_list .option.disabled {
     pointer-events: none;
 }
 
-section .option_list .option .icon{
+section .option_list .option .icon {
     height: 26px;
     width: 26px;
     border: 2px solid transparent;
@@ -261,20 +261,21 @@ section .option_list .option .icon{
     transition: all 0.3s ease;
     line-height: 24px;
 }
-.option_list .option .icon.tick{
+
+.option_list .option .icon.tick {
     color: #00a226;
     border-color: #115d23;
     background: #aaf8bc;
 }
 
-.option_list .option .icon.cross{
+.option_list .option .icon.cross {
     color: #a40b1a;
     background: #ffaeb5;
     border-color: #a42834;
 }
 
 /* footer styling */
-footer{
+footer {
     height: 60px;
     padding: 0 30px;
     display: flex;
@@ -283,22 +284,22 @@ footer{
     border-top: 1px solid rgb(119, 119, 119);
 }
 
-footer .total_que span{
+footer .total_que span {
     display: flex;
     user-select: none;
 }
 
-footer .total_que span p{
+footer .total_que span p {
     font-weight: 500;
     padding: 0 5px;
 }
 
-footer .total_que span p:first-child{
+footer .total_que span p:first-child {
     padding-left: 0px;
 }
 
 /* footer button styling */
-footer button{
+footer button {
     height: 40px;
     padding: 0 13px;
     font-size: 18px;
@@ -317,13 +318,70 @@ footer button{
     transition: all 0.3s ease;
 }
 
-footer button:hover{
+footer button:hover {
     background: #8c96a0;
 }
 
-footer button.show{
+footer button.show {
     opacity: 1;
     pointer-events: auto;
     transform: scale(1);
 }
 
+/* result box styling */
+.result_box{
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    padding: 25px 30px;
+    width: 450px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.result_box .icon{
+    font-size: 100px;
+    color: #c34f8d;
+    margin-bottom: 10px;
+}
+
+.result_box .complete_text{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.result_box .score_text span{
+    display: flex;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.result_box .score_text span p{
+    padding: 0 4px;
+    font-weight: 600;
+}
+
+.result_box .buttons{
+    display: flex;
+    margin: 20px 0;
+}
+
+.result_box .buttons button{
+    margin: 0 10px;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #c34f8d;
+    transition: all 0.3s ease;
+}
