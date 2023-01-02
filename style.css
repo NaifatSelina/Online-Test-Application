@@ -16,3 +16,12 @@ body{
     color: #fff;
     background: #080206;
 }
+
+.start_btn{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(255, 64, 223, 0.2), 
+                0 6px 20px 0 rgba(10, 64, 11, 0.19);
+}
