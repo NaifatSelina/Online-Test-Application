@@ -416,9 +416,10 @@ footer button.show {
     color: #fff;
     background: #c34f8d;
 }
-
+/* font */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"); 
 
+/* basic styling */
 *{
     margin: 0;
     padding:0;
@@ -434,6 +435,7 @@ body {
     min-height: 100vh;
 
 }
+/* quiz container */
 .container{
     width: 850px;
     height: 600px;
@@ -444,3 +446,41 @@ body {
     border-radius: 10px;
     display:flex;
 }
+
+
+/* welcome page info styling */
+.rightSide h1{
+    color:#201414;
+    font-size: 32px;
+}
+.rightSide h2{
+    color: rgb(22, 21, 21) ;
+    margin:20px auto 10px;
+    font-size:25px;
+}
+.rightSide ul{
+    color: rgb(14, 14, 14) ;
+    font-size:18px;
+    margin-top:600;
+    list-style-type: circle;
+    list-style-position: inside;
+    
+}
+.rightSide ul li{
+    margin-top: 5px;
+}
+.rightSide a{
+    background-color: #dbd9d9;
+    border-radius: 100px;
+    color:rgb(46, 40, 40);
+    font-weight:600;
+    width:100%;
+    display:inline-block;
+    text-align: center;
+    padding:15px 0;
+    margin-top:25px;
+    text-decoration: none;
+    outline:none;
+
+}
+
